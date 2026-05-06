@@ -336,7 +336,7 @@ Claude (指揮中樞)
 
 發現 bug 或有建議？
 
-- 🔒 **安全相關**：發送郵件至 ab781122@gmail.com（不要在 Issue 中暴露）
+- 🔒 **安全相關**：發送郵件至 security@example.com（不要在 Issue 中暴露）
 - 🐛 **功能相關**：在 GitHub Issues 中詳細描述問題
 - 💬 **使用建議**：提交 Discussion 或 PR
 

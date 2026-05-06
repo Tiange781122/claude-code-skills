@@ -131,7 +131,7 @@ PROMPT
 ```yaml
 task: 在 Obsidian 知識庫建立 BGP 路由篩選筆記
 context:
-  vault_path: /Users/bart/obsidian-vault
+  vault_path: <obsidian-vault-path>
   target_folder: 5.專業知識基礎/5.1.網路協定/5.1.1.BGP路由
 domain_rules:
   - 葉子資料夾只放 .md，不可混放子資料夾

@@ -77,7 +77,7 @@ compatibility: Obsidian 筆記系統、Bash
 ### 基本用法
 
 ```
-/kbo 掃描並整理 /Users/bart/obsidian-vault/2.網路基礎設施/2.1.交換器
+/kbo 掃描並整理 <obsidian-vault-path>/2.網路基礎設施/2.1.交換器
 ```
 
 ### 流程步驟
@@ -140,7 +140,7 @@ compatibility: Obsidian 筆記系統、Bash
 ## 📊 知識庫整理報告
 
 ### 🔍 掃描結果
-- 掃描路徑：`/Users/bart/obsidian-vault/2.網路基礎設施/2.1.交換器`
+- 掃描路徑：`<obsidian-vault-path>/2.網路基礎設施/2.1.交換器`
 - 掃描時間：2026-04-21 12:00:00
 - 發現問題：3 項
 
@@ -172,7 +172,7 @@ compatibility: Obsidian 筆記系統、Bash
 ## 參考規範
 
 本技能遵循的規範位置：
-- 主規範：`/Users/bart/obsidian-vault/CLAUDE.md`
+- 主規範：`<obsidian-vault-path>/CLAUDE.md`
 - 重點：容器原則、編號系統、葉資料夾優先、去重檢查
 
 ---
@@ -364,25 +364,25 @@ done
 
 ### 場景 1：定期掃描整個知識庫
 ```
-/kbo 掃描 /Users/bart/obsidian-vault
+/kbo 掃描 <obsidian-vault-path>
 ```
 掃描所有資料夾，輸出整體健康報告。
 
 ### 場景 2：整理特定分類
 ```
-/kbo 整理 /Users/bart/obsidian-vault/2.網路基礎設施
+/kbo 整理 <obsidian-vault-path>/2.網路基礎設施
 ```
 專注於網路基礎設施分類，提出整理方案。
 
 ### 場景 3：驗證已整理的結構
 ```
-/kbo 驗證 /Users/bart/obsidian-vault/2.網路基礎設施/2.1.交換器/2.1.2.Cisco
+/kbo 驗證 <obsidian-vault-path>/2.網路基礎設施/2.1.交換器/2.1.2.Cisco
 ```
 檢查已整理的資料夾是否符合規範（如上述案例）。
 
 ### 場景 4：大規模重構（100+ 檔案）
 ```
-/kbo 根據內容分類並執行 /Users/bart/obsidian-vault/5.專業知識基礎
+/kbo 根據內容分類並執行 <obsidian-vault-path>/5.專業知識基礎
 ```
 適用場景：
 - 現有結構亂、層級深（4+ 層）
@@ -405,7 +405,7 @@ done
 
 本技能可與定期任務結合：
 ```
-/loop 7d /kbo 掃描 /Users/bart/obsidian-vault
+/loop 7d /kbo 掃描 <obsidian-vault-path>
 ```
 每 7 天自動掃描一次知識庫。
 

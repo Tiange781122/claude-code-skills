@@ -119,7 +119,7 @@ compatibility: WebSearch, 可選 Gemini CLI
 
 **圖片處理方式**（只用 Obsidian 本地引用）：
 
-1. **搜尋並下載圖片** → 自動保存到 `/Users/bart/obsidian-vault/12.資源/12.3.圖片資產`
+1. **搜尋並下載圖片** → 自動保存到 `<obsidian-vault-path>/12.資源/12.3.圖片資產`
    - 優先從 Wikimedia Commons、Wikipedia、官方技術文檔搜尋
    - 支持格式：PNG、SVG、JPG
    - 建議搜尋關鍵字：`[技術名] [內容] diagram site:commons.wikimedia.org`
@@ -130,7 +130,7 @@ compatibility: WebSearch, 可選 Gemini CLI
    或
    ![[图片文件名.svg]]
    ```
-   - 圖片自動從 `/Users/bart/obsidian-vault/12.資源/12.3.圖片資產` 中引用
+   - 圖片自動從 `<obsidian-vault-path>/12.資源/12.3.圖片資產` 中引用
    - Obsidian 會自動解析並嵌入顯示
 
 3. **圖片命名規則**：

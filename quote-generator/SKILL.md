@@ -152,7 +152,7 @@ def fill_quote(template_path, output_path, data):
 ```python
 import os, re
 
-base = '/Users/bart/obsidian-vault/7.專案與案例/7.1.客戶'
+base = '<obsidian-vault-path>/7.專案與案例/7.1.客戶'
 customer_name = '＜客戶名稱＞'  # 由使用者提供或從比價結果取得
 entries = [d for d in os.listdir(base) if os.path.isdir(os.path.join(base, d))]
 match = next((d for d in entries if customer_name in d), None)
