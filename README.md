@@ -1,6 +1,6 @@
-# Claude Code Skills Collection
+# Bart's Claude Code Skills Collection
 
-一套專業化、模組化的 Claude AI 技能集合，涵蓋知識管理、技術教學、代碼開發、業務流程等多個領域。每個 skill 都經過資安審核並已移除所有敏感信息，適合企業內部和開源使用。
+一套專業化、模組化的 Claude AI 技能集合，由 Bart 開發和維護。涵蓋知識管理、技術教學、代碼開發、業務流程等多個領域。每個 skill 都經過資安審核並已移除所有敏感信息，適合企業內部和開源使用。
 
 ## 🎯 核心價值
 
@@ -424,6 +424,7 @@ A: 當然可以！skills 是開源的，你可以根據需要自訂。建議：
 - 📖 完全重寫 README，增加實際效能數據和應用場景
 - 🤖 強調 Commander 系列的協調模式設計
 - 📊 新增詳細的效能統計表
+- 👤 加上作者歸屬 — Bart's Claude Code Skills Collection
 
 **新增內容**
 - 應用場景速查表（快速找到所需 skill）
@@ -464,9 +465,22 @@ A: 當然可以！skills 是開源的，你可以根據需要自訂。建議：
 
 ---
 
+## 👤 關於作者
+
+**Bart** — 知識工作者、技術愛好者、AI 應用探索者
+
+這個 skills 集合是我在日常工作中開發和積累的工具庫。每個 skill 都來自於解決實際問題的需求，經過多次迭代和優化。
+
+如果你發現這些 skills 有幫助，歡迎：
+- ⭐ 在 GitHub 上 star 此倉庫
+- 🔗 分享給更多需要的人
+- 💡 提交改進建議和新想法
+
+---
+
 ## 🎉 感謝
 
-感謝使用 Claude Code Skills Collection！
+感謝使用 **Bart's Claude Code Skills Collection**！
 
 這是一個持續改進的開源項目，歡迎：
 - 提交 Issue 報告 bug
@@ -474,4 +488,4 @@ A: 當然可以！skills 是開源的，你可以根據需要自訂。建議：
 - 分享你的使用經驗和建議
 - 開發新的 skills 並貢獻給社區
 
-**有任何問題或建議，歡迎在 GitHub Issues 中告訴我們。** 🙌
+**有任何問題或建議，歡迎在 GitHub Issues 中告訴我。** 🙌
