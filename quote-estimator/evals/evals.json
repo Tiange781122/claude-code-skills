@@ -4,7 +4,7 @@
     {
       "id": 1,
       "name": "run-tai-firewall-replacement",
-      "prompt": "根據以下會議紀錄，提供完整報價：\n\n潤泰集團於 2026/04/07 開會討論防火牆汰換。現況是總部有 FortiGate 80F/801F × 2 台（未做 HA），工地約 20 個外點各用 FortiGate 60F。決議採購 FortiGate 91G × 2（做 Active-Passive HA）、FortiGate 50G 多台、FortiManager 虛擬機版。前置設定在公司端進行，設備到貨後做前 2-3 個外點的現場測試，其他外點直接寄送到工地由客戶插線。施工時間盡量安排假日上架。客戶集團已有 FortiAnalyzer 運行約 2 年。",
+      "prompt": "根據以下會議紀錄，提供完整報價：\n\n科技製造集團 A 於 2026/04/07 開會討論防火牆汰換。現況是總部有 FortiGate 80F/801F × 2 台（未做 HA），工地約 20 個外點各用 FortiGate 60F。決議採購 FortiGate 91G × 2（做 Active-Passive HA）、FortiGate 50G 多台、FortiManager 虛擬機版。前置設定在公司端進行，設備到貨後做前 2-3 個外點的現場測試，其他外點直接寄送到工地由客戶插線。施工時間盡量安排假日上架。客戶集團已有 FortiAnalyzer 運行約 2 年。",
       "expected_output": "完整報價單，包含：1) 91G HA 前置 2-3 天、2) 50G 工地端部署工時估算、3) 假日施工加成 ×1.5、4) 工項分解（前置、現場、納管）、5) 標記 IPsec VPN 條數待確認、6) 客戶準備事項清單、7) 備註說明（多點部署流程）。",
       "expectations": [
         "計算結果包含 HA 架構 +1 天",
@@ -18,7 +18,7 @@
     {
       "id": 2,
       "name": "network-equipment-expansion",
-      "prompt": "根據以下會議紀錄，提供報價估算：\n\n2026/04/16 網通設備需求討論會議。客戶中壢總部擴充 4 樓（增加 Aruba 6100 交換器），新增宜蘭分公司據點（新工廠，約 8-10 人）。宜蘭據點規劃採用 FortiGate 80F 或 70G 防火牆，透過 Site-to-Site VPN 建立 Full Mesh（總部、中壢民權路、宜蘭三地互通）。施工方式為工程師先在公司預設交換器（韌體升級），再到現場上架測試。客戶表示施工不影響作業，可安排於平日白天進行。",
+      "prompt": "根據以下會議紀錄，提供報價估算：\n\n2026/04/16 網通設備需求討論會議。客戶總部擴充 4 樓（增加 Aruba 6100 交換器），新增南部分公司據點（新工廠，約 8-10 人）。南部據點規劃採用 FortiGate 80F 或 70G 防火牆，透過 Site-to-Site VPN 建立 Full Mesh（總部、台北本部、南部三地互通）。施工方式為工程師先在公司預設交換器（韌體升級），再到現場上架測試。客戶表示施工不影響作業，可安排於平日白天進行。",
       "expected_output": "報價單，包含：1) 宜蘭防火牆基礎工時 2 天、2) Full Mesh VPN 複雜度計算（3 地互通 = 2 條 VPN，+0.6 天）、3) 平日白天施工無加成、4) 總工時 2.6 天、5) 工項分解、6) 待確認事項（現有 policy 數、Aruba 交換器配置詳情）。",
       "expectations": [
         "HA 架構項目應為 0（未提及）",
@@ -32,7 +32,7 @@
     {
       "id": 3,
       "name": "palo-alto-replacement-with-vpn",
-      "prompt": "根據以下會議紀錄，提供報價：\n\n順益汽車於 2026/04/09 評估 Palo Alto 防火牆汰換。現況使用 PA-820（單台無 HA），原廠授權到年底。目標汰換為 PA-440（2 台做 Active-Passive HA），搭配 Aruba 6100/6200M 交換器。另規劃建立 GlobalProtect VPN 功能，以及 EDL（External Dynamic List）黑名單機制。移轉計畫分為：前置設定 3 天、現場安裝 1 個平日晚間、隔天（週五）待命 1 天。新舊版本差異較大，設定移轉需較多時間。",
+      "prompt": "根據以下會議紀錄，提供報價：\n\n汽車製造公司 B 於 2026/04/09 評估 Palo Alto 防火牆汰換。現況使用 PA-820（單台無 HA），原廠授權到年底。目標汰換為 PA-440（2 台做 Active-Passive HA），搭配 Aruba 6100/6200M 交換器。另規劃建立 GlobalProtect VPN 功能，以及 EDL（External Dynamic List）黑名單機制。移轉計畫分為：前置設定 3 天、現場安裝 1 個平日晚間、隔天（週五）待命 1 天。新舊版本差異較大，設定移轉需較多時間。",
       "expected_output": "報價單，包含：1) HA 架構 +1 天、2) GlobalProtect VPN 設定（不計 IPsec，但應標記為「VPN 需求確認」）、3) 現場晚間施工 ×1.5 加成、4) 總工時 (2+1)×1.5 = 4.5 天、5) 工項分解（前置 Lab、現場安裝、隔日待命）、6) Aruba Switch 說明（不在防火牆報價範圍內）、7) 待確認事項（EDL 黑名單影響工時、GlobalProtect VPN 帳號數）。",
       "expectations": [
         "計算結果包含 HA 架構 +1 天",

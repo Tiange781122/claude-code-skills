@@ -5,9 +5,19 @@ __pycache__/
 *.swp
 *.swo
 *~
+
+# 環境和安全
 .env
+.env.local
+.env.*.local
 .venv
 venv/
+secrets.json
+*.key
+*.pem
+credentials.json
+
+# 構建和依賴
 dist/
 build/
 *.egg-info/
@@ -15,12 +25,24 @@ build/
 .coverage
 htmlcov/
 
-# IDE
+# IDE 和編輯器
 .vscode/
+.vscode/settings.json
 .idea/
 *.sublime-project
 *.sublime-workspace
+*.iml
+.DS_Store
 
-# OS
+# 日誌和臨時文件
+*.log
+*.log.*
+tmp/
+temp/
+.tmp/
+
+# 操作系統
 Thumbs.db
 .DS_Store
+.AppleDouble
+.LSOverride
