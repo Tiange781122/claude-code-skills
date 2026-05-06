@@ -1,0 +1,23 @@
+{
+  "skill_name": "tech-evolution-storyteller",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "用 tech-evolution-storyteller 講解「HTTPS 加密如何保護數據」",
+      "expected_output": "一份詳細的 Markdown 文檔，包含：(1) SSL/TLS 的歷史背景（Netscape 1994、Taher Elgamal 設計、RSA 加密等）；(2) 時間線圖表展示 SSL 2.0 → 3.0 → TLS 1.0/1.1/1.2/1.3 的演進；(3) 故事化講解 HTTP 的安全隱患、非對稱加密的工作原理（用日常類比如「鎖和鑰匙」）、現代 TLS 1.3 的優化；(4) Mermaid 圖表展示握手過程或加密流程；(5) 至少 6 個核心要點；(6) 引用 IETF RFC、CA 機制等官方標準",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "用 tech-evolution-storyteller 講解「WiFi 無線傳輸如何工作」",
+      "expected_output": "一份詳細 Markdown，涵蓋：(1) 電磁波發現的歷史（赫茲、法拉第、奧斯特等）；(2) 從簡單波到複雜調制的演進（ASK → FSK → PSK → QAM → OFDM）；(3) MIMO 多天線技術的發展；(4) 時間線圖表（1887 赫茲發現 → 1997 IEEE 802.11 → WiFi 4/5/6/7）；(5) 用水波、音樂等比喻講解頻分復用、正交編碼；(6) Mermaid 圖表可視化 QAM 星座圖、OFDM 子載波、MIMO 空間分集；(7) 至少 6 個核心要點；(8) 引用 IEEE 802.11 標準和廠商白皮書",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "用 tech-evolution-storyteller 講解「GPU 並行計算為什麼能加速」",
+      "expected_output": "一份詳細 Markdown，包含：(1) GPU 發展史（NVIDIA GeForce 3 首個可編程 GPU、CUDA 2006 推出等）；(2) CPU vs GPU 的架構對比故事（多複雜處理器 vs 許多簡單處理器）；(3) 從圖形渲染 → 通用計算的演進；(4) 時間線展示 GPU 晶片的代際進化（Tesla → Fermi → Kepler → Maxwell → Pascal → Ampere → Hopper）；(5) 用類比講解並行計算（如多條流水線、許多工人同時工作）；(6) Mermaid 圖表展示 GPU 線程組織、記憶體層次結構、計算模型；(7) 至少 6 個核心要點涵蓋 SIMD、CUDA 架構、張量計算；(8) 引用 NVIDIA 白皮書、學術論文",
+      "files": []
+    }
+  ]
+}

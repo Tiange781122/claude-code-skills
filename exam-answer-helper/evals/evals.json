@@ -1,0 +1,23 @@
+{
+  "skill_name": "exam-answer-helper",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "我有一道網路基礎的選擇題要複習：\n\n在 OSI 模型中，TCP 運作在哪一層？\nA) 第 1 層（物理層）\nB) 第 2 層（資料連結層）\nC) 第 4 層（傳輸層）\nD) 第 5 層（會話層）",
+      "expected_output": "應該提供正確答案（C），解釋 TCP 在傳輸層的作用，逐一分析為什麼其他選項錯誤，用初級程度語言解釋",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Help me with this English exam question:\n\nWhat is the primary function of a firewall?\nA) To encrypt all network traffic\nB) To monitor and control incoming and outgoing network traffic\nC) To increase internet speed\nD) To provide WiFi connectivity",
+      "expected_output": "應該提供英文原文和繁體中文翻譯，給出正確答案（B），詳細解釋防火牆的作用，分析每個選項",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "系統管理考題：請解釋 VLAN 的用途是什麼？它如何幫助網路分段？",
+      "expected_output": "應該提供清晰的答案，解釋 VLAN 的概念、用途和優點，用實例說明如何進行網路分段，適合初級程度理解",
+      "files": []
+    }
+  ]
+}
