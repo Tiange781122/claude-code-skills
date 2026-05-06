@@ -1,128 +1,128 @@
 # Bart's Claude Code Skills Collection
 
-一套專業化、模組化的 Claude AI 技能集合，由 Bart 開發和維護。涵蓋知識管理、技術教學、代碼開發、業務流程等多個領域。每個 skill 都經過資安審核並已移除所有敏感信息，適合企業內部和開源使用。
+一套專業化、模組化的 Claude AI 技能集合，由 Bart 開發和維護。涵蓋知識管理、技術教學、代碼開發、業務流程、文檔撰寫、系統管理等多個領域。共 28 個 skills，每個都經過資安審核並已移除所有敏感信息，適合企業內部和開源使用。
 
 ## 🎯 核心價值
 
 - **提高效能** — 將重複工作自動化，節省時間（平均 3-10 倍效率提升）
 - **知識內化** — 用故事化和擬人化方式深化技術理解
 - **流程標準化** — 業務報價、知識整理、代碼審查全流程覆蓋
-- **開源友好** — 所有 skills 開源，完全移除個人信息，適合公開發佈
+- **完全開源** — 28 個 skills，所有代碼開源，完全移除個人信息，適合公開發佈
 
 ---
 
-## 📦 Skills 完整列表 (11 個)
+## 📦 Skills 完整列表 (28 個)
 
-### 🔧 技術學習與講解 (2個)
+### 🔧 技術學習與講解 (2 個)
 
 讓 Claude 用故事化方式講解複雜的技術概念，幫助用戶深度理解和教學準備。
 
-| Skill | 描述 | 觸發方式 | 效能提升 |
-|-------|------|---------|---------|
-| **tech-evolution-storyteller** | 將任何技術概念轉化為時間線故事。自動搜尋完整信息，從歷史發展 → 核心原理 → 現代應用，梳理 6+ 核心要點。包含時間線圖表、概念圖解、學術引用。 | `/tech-evolution-storyteller` | 10x |
-| **tech-personification-storytelling** | 用擬人化故事講解技術概念（如將 TCP 比作信件系統）。融合物理原理、歷史演進、日常比喻，幫助非專業人士快速理解複雜概念。 | `/tech-personification-storytelling` | 8x |
-
-**應用場景**：
-- 🎓 教學準備、知識內化
-- 📖 技術博客文章撰寫
-- 💡 向客戶和非技術人員解釋複雜概念
+| Skill | 描述 | 觸發方式 |
+|-------|------|---------|
+| **tech-evolution-storyteller** | 將任何技術概念轉化為時間線故事。自動搜尋完整信息，從歷史發展 → 核心原理 → 現代應用，梳理 6+ 核心要點。包含時間線圖表、概念圖解、學術引用。 | `/tech-evolution-storyteller` |
+| **tech-personification-storytelling** | 用擬人化故事講解技術概念（如將 TCP 比作信件系統）。融合物理原理、歷史演進、日常比喻，幫助非專業人士快速理解複雜概念。 | `/tech-personification-storytelling` |
 
 ---
 
-### 💼 業務報價流程 (4個)
+### 💼 業務報價流程 (4 個)
 
-完整的商業報價閉環：詢價信 → 報價解析 → 成本估算 → 正式報價單。可各自獨立使用，也可串聯組合。
+完整的商業報價閉環：詢價信 → 報價解析 → 成本估算 → 正式報價單。
 
-| Skill | 描述 | 觸發方式 | 效能提升 |
-|-------|------|---------|---------|
-| **quote-inquiry** | 業務詢價信生成。讀取客戶需求單 + 代理商對照表，自動產出專業詢價 Email 草稿，支援多代理商並行詢價。 | `/quote-inquiry` | 5x |
-| **quote-analysis** | 報價解析與自動比價。解析各代理商 Email/Excel 回覆，進行 QA 檢查（規格比對、完整性檢驗），產出標準化比價表。支援快速決策。 | `/quote-analysis` | 8x |
-| **quote-estimator** | 工程師成本估算。根據技術複雜度（HA、VPN、防火牆規則數）自動計算工時和費用，支援假日/晚間加成計算。適合技術驅動的項目報價。 | `/quote-estimator` | 5x |
-| **quote-generator** | 正式報價單產出。根據比價結果自動填入報價單範本，支援 Excel 和 PDF，自動計算稅金和金額。一鍵生成交付文件。 | `/quote-generator` | 6x |
-
-**應用場景**：
-- 💰 採購詢價、供應商比價（單次 15 分鐘 vs 手動 2 小時）
-- 📊 工程項目成本估算、工時報價
-- 📄 正式報價單和送件清單產出
-
-**完整工作流**：
-```
-客戶需求清單
-    ↓
-[quote-inquiry] → 詢價信發送給多家代理商
-    ↓
-代理商回覆報價
-    ↓
-[quote-analysis] → 自動解析 & QA 檢查 → 比價表
-    ↓
-[quote-estimator] → 工程工時估算（如適用）
-    ↓
-[quote-generator] → 正式報價單 (Excel + PDF)
-    ↓
-發送給客戶簽核
-```
+| Skill | 描述 | 觸發方式 |
+|-------|------|---------|
+| **quote-inquiry** | 業務詢價信生成。讀取客戶需求單 + 代理商對照表，自動產出專業詢價 Email 草稿，支援多代理商並行詢價。 | `/quote-inquiry` |
+| **quote-analysis** | 報價解析與自動比價。解析各代理商 Email/Excel 回覆，進行 QA 檢查，產出標準化比價表。 | `/quote-analysis` |
+| **quote-estimator** | 工程師成本估算。根據技術複雜度自動計算工時和費用，支援假日/晚間加成計算。 | `/quote-estimator` |
+| **quote-generator** | 正式報價單產出。根據比價結果自動填入報價單範本，支援 Excel 和 PDF，自動計算稅金和金額。 | `/quote-generator` |
 
 ---
 
-### 🤖 AI 指揮工具 (3個)
+### 🤖 AI 指揮工具 (3 個)
 
-讓 Claude 指揮其他 AI 或專用工具進行特定任務。本質上是「Claude 元指揮層」，協調多個執行層以完成複雜任務。
+讓 Claude 指揮其他 AI 或專用工具進行特定任務。本質上是「Claude 元指揮層」，協調多個執行層。
 
-| Skill | 指揮對象 | 職責 | 觸發方式 | 效能提升 |
-|-------|---------|------|---------|---------|
-| **codex-commander** | 代碼搜尋引擎 | 快速定位代碼庫中的特定函數、類、API、檔案，支援 glob 模式、引用追蹤、代碼流分析 | `/codex-commander` | 3x |
-| **kiro-commander** | 代碼優化引擎 | 識別重複代碼、邏輯冗餘、性能瓶頸，自動提出重構建議並生成改進版本 | `/kiro-commander` | 3x |
-| **gemini-commander** | Google Gemini AI | 網路搜尋、圖片分析、多模態任務，補充 Claude 的搜尋和分析能力 | `/gemini-commander` | 2x |
-
-**設計理念**：
-- 三個 Commander 都是「指揮工具」，Claude 是決策和協調的中樞
-- codex 和 kiro 指揮代碼層的工具和引擎
-- gemini 指揮另一個 AI 模型，實現 AI 協作
-- 統一的指揮模式，易於未來擴展（如 anthropic-commander, openrouter-commander）
-
-**應用場景**：
-- 🔍 快速定位和分析代碼邏輯、相依性
-- 🔄 自動化代碼品質改進、技術債清理
-- 🌐 需要實時網路搜尋或圖片分析時
-- 📊 複雜任務需要多個 AI 協同工作
+| Skill | 指揮對象 | 觸發方式 |
+|-------|---------|---------|
+| **codex-commander** | 代碼搜尋引擎 | `/codex-commander` |
+| **kiro-commander** | 代碼優化引擎 | `/kiro-commander` |
+| **gemini-commander** | Google Gemini AI | `/gemini-commander` |
 
 ---
 
-### 📚 知識管理工具 (2個)
+### 🗂️ 知識管理與可視化 (2 個)
 
 組織和可視化知識結構，適合個人或團隊的知識庫建設。
 
-| Skill | 描述 | 觸發方式 | 效能提升 |
-|-------|------|---------|---------|
-| **knowledge-base-organizer** | 知識庫結構優化。檢查資料夾層級、去重相似卡片、合併內容、驗證命名規範。使用「命名即知識體」原則，自動提出重構建議。 | `/knowledge-base-organizer` | 3x |
-| **graphify** | 知識圖譜生成。將任何程式碼、文檔、論文轉化為結構化知識圖，可視化概念關係、相互引用、資料流。支援心智圖和詳細圖譜兩種模式。 | `/graphify` | 4x |
-
-**應用場景**：
-- 🗂️ 清理雜亂的知識庫或代碼倉庫
-- 🕸️ 生成技術文檔的知識地圖
-- 📊 視覺化複雜系統的架構和相依性
-- 🎓 團隊知識體系建立
+| Skill | 描述 | 觸發方式 |
+|-------|------|---------|
+| **knowledge-base-organizer** | 知識庫結構優化。檢查資料夾層級、去重相似卡片、合併內容、驗證命名規範。 | `/knowledge-base-organizer` |
+| **graphify** | 知識圖譜生成。將任何程式碼、文檔、論文轉化為結構化知識圖，可視化概念關係。 | `/graphify` |
 
 ---
 
-### 📖 其他專用工具 (1個)
+### 📔 Obsidian 工具集 (8 個)
 
-專注於特定領域的高效工具，幫助特定任務的快速完成。
+針對 Obsidian 知識庫的專用工具，覆蓋筆記撰寫、Canvas 設計、發布流程、日誌記錄等完整工作流。
 
-| Skill | 描述 | 觸發方式 | 效能提升 |
-|-------|------|---------|---------|
-| **exam-answer-helper** | 考試答題助手。快速生成高質量答案（概念題、計算題、論述題、多選題）。支援國英文混合題型，包含詳細解釋和替代思路。 | `/exam-answer-helper` | 5x |
+| Skill | 描述 | 觸發方式 |
+|-------|------|---------|
+| **obsidian-note-writer** | 知識庫卡片撰寫規範。確保 frontmatter、Markdown、內嵌圖片、連結格式的一致性。 | `/obsidian-note-writer` |
+| **obsidian-canvas-creator** | Canvas 畫布生成。自動產出視覺化 Canvas 檔，組織複雜知識結構。 | `/obsidian-canvas-creator` |
+| **obsidian-bases** | Obsidian Bases 資料庫。管理結構化數據，支援篩選、分類、聯動。 | `/obsidian-bases` |
+| **obsidian-cli** | 命令列工具。快速管理 Obsidian 檔案、同步、批量操作。 | `/obsidian-cli` |
+| **obsidian-markdown** | Markdown 語法參考。支援 Obsidian 特有語法（callouts、properties、embeds）。 | `/obsidian-markdown` |
+| **daily-log-recorder** | 每日工作日誌。標準化日誌模板和記錄流程。 | `/daily-log-recorder` |
+| **publish-workflow** | 發布驗證與 Git 提交流程。確保代碼質量和提交信息規範。 | `/publish-workflow` |
+| **transcript-knowledge-extractor** | 逐字稿知識提取。從會議紀錄、訪談轉錄自動提取關鍵知識卡片。 | `/transcript-knowledge-extractor` |
 
-**應用場景**：
-- 📚 考試複習、題庫解析
-- ✏️ 考前快速練習
-- 🧠 知識點深度理解
+---
+
+### 🌐 搜尋與資訊工具 (1 個)
+
+高效的網路搜尋和資訊收集工具。
+
+| Skill | 描述 | 觸發方式 |
+|-------|------|---------|
+| **search-strategy** | 搜尋工具策略。整合 gemini cli 和 WebSearch，支援多種模式（Claude / Gemini 前景 / Gemini 背景）。 | `/search-strategy` |
+
+---
+
+### 🔒 防火牆與網路安全 (2 個)
+
+針對防火牆配置、安全分析、報告生成的專用工具。
+
+| Skill | 描述 | 觸發方式 |
+|-------|------|---------|
+| **firewall-policy-analyzer** | 防火牆政策安全分析。檢查 Fortinet、Palo Alto 等防火牆的政策配置，識別安全漏洞和改進建議。 | `/firewall-policy-analyzer` |
+| **fortigate-report-generator** | FortiGate CIS 建議書。根據審核結果自動產出專業建議書報告。 | `/fortigate-report-generator` |
+
+---
+
+### 📄 文檔與圖表工具 (2 個)
+
+文檔格式轉換、圖表生成等工具。
+
+| Skill | 描述 | 觸發方式 |
+|-------|------|---------|
+| **md-to-docx-converter** | Markdown 轉 Word。將 Markdown 檔案轉換為 DOCX，支援保留格式、圖片、表格。 | `/md-to-docx-converter` |
+| **mermaid-visualizer** | Mermaid 圖表生成。自動生成流程圖、時序圖、狀態圖、思維導圖等。 | `/mermaid-visualizer` |
+
+---
+
+### 🎓 其他工具 (2 個)
+
+專注於特定任務的高效工具。
+
+| Skill | 描述 | 觸發方式 |
+|-------|------|---------|
+| **exam-answer-helper** | 考試答題助手。快速生成高質量答案（概念題、計算題、論述題、多選題）。 | `/exam-answer-helper` |
+| **defuddle** | 模糊概念澄清。針對容易混淆的技術概念進行深度對比和澄清。 | `/defuddle` |
 
 ---
 
 ## 🚀 快速開始
 
-### 安裝方式 1：完整安裝所有 11 個 Skills
+### 安裝方式 1：完整安裝所有 28 個 Skills
 
 ```bash
 # 克隆倉庫
@@ -163,19 +163,22 @@ cp -r ~/claude-skills-repo/quote-estimator ~/.claude/skills/
 
 ## 📊 Skills 應用場景速查表
 
-| 工作場景 | 推薦使用的 Skills | 預期效率提升 |
-|---------|------------------|----------|
-| 📚 準備技術教學 | tech-evolution-storyteller + tech-personification-storytelling | 8-10x |
-| 💼 進行採購詢價 | quote-inquiry + quote-analysis | 8x |
-| 💰 估算項目成本 | quote-estimator | 5x |
-| 📄 產出正式報價單 | quote-generator | 6x |
-| 🗂️ 整理知識庫 | knowledge-base-organizer | 3x |
-| 🔍 查找代碼邏輯 | codex-commander | 3x |
-| 🕸️ 生成知識圖譜 | graphify | 4x |
-| 🔄 優化代碼品質 | kiro-commander | 3x |
-| 🌐 網路搜尋與分析 | gemini-commander | 2x |
-| 📚 準備考試複習 | exam-answer-helper | 5x |
-| 🎓 團隊知識體系 | knowledge-base-organizer + graphify | 3-4x |
+| 工作場景 | 推薦使用的 Skills |
+|---------|------------------|
+| 📚 準備技術教學 | tech-evolution-storyteller + tech-personification-storytelling |
+| 💼 進行採購詢價 | quote-inquiry + quote-analysis |
+| 💰 估算項目成本 | quote-estimator |
+| 📄 產出正式報價單 | quote-generator |
+| 🗂️ 整理知識庫 | knowledge-base-organizer |
+| 📔 撰寫知識卡片 | obsidian-note-writer |
+| 🕸️ 生成知識圖譜 | graphify |
+| 🔍 查找代碼邏輯 | codex-commander |
+| 🔄 優化代碼品質 | kiro-commander |
+| 🌐 網路搜尋與分析 | gemini-commander + search-strategy |
+| 📊 生成圖表與 Canvas | mermaid-visualizer + obsidian-canvas-creator |
+| 📝 日誌記錄和發布 | daily-log-recorder + publish-workflow |
+| 🎓 考試複習 | exam-answer-helper |
+| 🔒 防火牆安全審查 | firewall-policy-analyzer + fortigate-report-generator |
 
 ---
 
@@ -212,16 +215,10 @@ skill-name/
 ## 💡 核心設計原則
 
 ### 1. 模組化架構
-每個 skill 獨立運作，也可與其他 skills 組合。例如，報價流程使用 4 個 skills 順序執行，也可單獨使用其中任何一個。
+每個 skill 獨立運作，也可與其他 skills 組合形成完整工作流。
 
 ### 2. 可擴展性
-所有 SKILL.md 都遵循統一格式：
-- 用途和觸發指令清楚
-- 完整的工作流 (Step 1 → Step N)
-- 輸入輸出格式明確
-- 實際使用範例
-
-新增 skill 時只需複製並修改範本。支援社區貢獻。
+所有 SKILL.md 都遵循統一格式，支援社區貢獻和定制。
 
 ### 3. 效能優先
 設計目標是將常見任務的完成時間減少 50-90%：
@@ -234,82 +231,6 @@ skill-name/
 - 完整的 .gitignore 配置
 - 明確的隱私政策
 - 開源友好
-
----
-
-## 📚 進階使用
-
-### Commander 系列的協調模式
-
-**AI 指揮工具的本質**是讓 Claude 作為決策層，協調其他專用工具或 AI 的執行層：
-
-```
-Claude (決策與協調層)
-    ├─ codex-commander (代碼搜尋執行層)
-    ├─ kiro-commander (代碼優化執行層)
-    └─ gemini-commander (Gemini AI 執行層)
-```
-
-**實際應用場景示例**：
-
-```
-用戶需求：「分析 utils.py 的邏輯並優化它」
-
-執行流程：
-1. Claude → codex-commander
-   「查找 utils.py 和所有呼叫它的地方」
-   ↓ (回傳代碼內容 + 相依性關係)
-
-2. Claude 分析
-   「這裡有重複邏輯，可以合併」
-   ↓ (決策和計劃)
-
-3. Claude → kiro-commander
-   「根據這些代碼，提出優化建議」
-   ↓ (回傳優化版本)
-
-4. Claude 整合結果
-   → 完整的重構方案 + 優化說明
-```
-
-### 組合使用 Skills 的工作流
-
-某些 skills 可順序組合使用，形成完整工作流：
-
-**業務報價流程** (4 個 skills 串聯)
-```
-[quote-inquiry] 
-    ↓ 輸出：詢價信
-[quote-analysis] 
-    ↓ 輸入：代理商回覆，輸出：比價表
-[quote-estimator] 
-    ↓ 輸入：技術規格，輸出：工時費用
-[quote-generator] 
-    ↓ 輸入：比價結果，輸出：Excel + PDF 報價單
-```
-
-**技術文檔撰寫流程** (2 個 skills + Commander 協助)
-```
-[tech-evolution-storyteller]
-    ↓ 輸出：詳細時間線 + 故事化講解
-
-[codex-commander] (可選) 
-    ↓ 查找代碼範例、相關實現
-
-[tech-personification-storytelling]
-    ↓ 輸出：擬人化故事版本
-
-→ 發佈為博客文章或內部文檔
-```
-
-### 自訂和擴展
-
-若需要針對特定需求調整 skill：
-
-1. 複製 skill 目錄到新名稱 (e.g., `quote-estimator-v2`)
-2. 修改 `SKILL.md` 中的說明、工作流、計費邏輯等
-3. 複製到 `~/.claude/skills/` 目錄
-4. 測試並驗證功能
 
 ---
 
@@ -331,35 +252,6 @@ Claude (決策與協調層)
 - [ ] 通過資安審查 (參考 SECURITY.md)
 - [ ] 遵循模組化設計原則
 
-### 新增 Commander 系列 Skill
-
-若想新增屬於 Commander 系列的 skill（如 `anthropic-commander`、`openrouter-commander`），請：
-
-1. 遵循 `gemini-commander` 的設計模式
-2. 在 SKILL.md 中明確說明「指揮的對象」和「執行能力」
-3. 說明與其他 Commander 的協調方式
-4. 包含詳細的整合範例
-5. 通過資安審核
-
----
-
-## 📊 效能統計
-
-| Skill | 複雜度 | 學習成本 | 執行效能提升 | 適用人群 |
-|-------|--------|---------|----------|---------|
-| tech-evolution-storyteller | ⭐⭐⭐⭐ | 中等 | 10x | 教育者、技術寫手 |
-| tech-personification-storytelling | ⭐⭐⭐ | 低 | 8x | 教育者、傳教士 |
-| quote-inquiry | ⭐⭐ | 低 | 5x | 採購、業務 |
-| quote-analysis | ⭐⭐⭐ | 低 | 8x | 採購、業務 |
-| quote-estimator | ⭐⭐⭐ | 中等 | 5x | 工程師、PM |
-| quote-generator | ⭐⭐ | 低 | 6x | 業務、PM |
-| knowledge-base-organizer | ⭐⭐ | 低 | 3x | 知識工作者 |
-| codex-commander | ⭐⭐⭐ | 低 | 3x | 開發者 |
-| kiro-commander | ⭐⭐⭐⭐ | 中等 | 3x | 開發者 |
-| gemini-commander | ⭐⭐ | 低 | 2x | 所有人 |
-| graphify | ⭐⭐⭐ | 中等 | 4x | 知識工作者、架構師 |
-| exam-answer-helper | ⭐⭐ | 低 | 5x | 學生、考試準備 |
-
 ---
 
 ## 📞 支援與反饋
@@ -374,19 +266,17 @@ Claude (決策與協調層)
 
 ### 常見問題 (FAQ)
 
-**Q: 可以離線使用嗎？**  
+**Q: 支持離線使用嗎？**  
 A: 大多數 skills 可完全離線使用。需要網路的 skills：
 - `gemini-commander` — 需要網路進行搜尋
-- `tech-evolution-storyteller` — 搜尋功能需要網路（其他功能可離線）
+- `tech-evolution-storyteller` — 搜尋功能需要網路
+- `search-strategy` — Gemini 模式需要網路
 
 **Q: 支持其他語言嗎？**  
-A: 目前以繁體中文為主。英文支援部分 skills：
-- `exam-answer-helper` — 支援英文題目
-- `quote-*` — 支援英文客戶信息
-歡迎提交多語言版本！
+A: 目前以繁體中文為主。部分 skills 支援英文。歡迎提交多語言版本！
 
 **Q: 可以商用嗎？**  
-A: 完全可以。MIT License 允許商用、修改、分發。請詳見 [LICENSE](LICENSE)。
+A: 完全可以。MIT License 允許商用、修改、分發。詳見 [LICENSE](LICENSE)。
 
 **Q: 如何更新到最新版本？**  
 A: 定期更新倉庫：
@@ -395,13 +285,9 @@ cd ~/claude-skills-repo
 git pull origin main
 cp -r * ~/.claude/skills/
 ```
-建議按月檢查一次更新。
 
 **Q: 可以修改 skill 嗎？**  
-A: 當然可以！skills 是開源的，你可以根據需要自訂。建議：
-1. 備份原版本
-2. 修改副本以保留自訂版本
-3. 如果改進後的版本有通用價值，考慮提交 PR
+A: 當然可以！skills 是開源的，你可以根據需要自訂。建議備份原版本並修改副本。
 
 ---
 
@@ -417,33 +303,23 @@ A: 當然可以！skills 是開源的，你可以根據需要自訂。建議：
 
 ## 📝 版本歷史
 
+### v3.0.0 (2026-05-06)
+
+**重大擴展** — 完整技能集合
+- 🚀 從 11 個技能擴展至 28 個
+- 📔 新增 8 個 Obsidian 工具集（筆記、Canvas、日誌、發布、提取知識）
+- 🔒 新增 2 個防火牆安全工具
+- 📄 新增 2 個文檔轉換工具
+- 🌐 新增搜尋策略工具
+- ✅ 所有新增技能均經過敏感信息審查和安全認證
+
 ### v2.0.0 (2026-05-06)
 
-**重大改進**
+**主要改進**
 - 🔒 完全移除個人信息（路徑、Email、內部資訊）
 - 📖 完全重寫 README，增加實際效能數據和應用場景
 - 🤖 強調 Commander 系列的協調模式設計
 - 📊 新增詳細的效能統計表
-- 👤 加上作者歸屬 — Bart's Claude Code Skills Collection
-
-**新增內容**
-- 應用場景速查表（快速找到所需 skill）
-- 完整的工作流示意和串聯使用示例
-- 進階使用部分的實際應用場景
-- 詳細的 FAQ 和常見問題解答
-
-### v1.2.0 (2026-05-06)
-
-**架構優化**
-- 🤖 新增「AI 指揮工具」分類，整合 Commander 系列
-- 說明三個 Commander 的協調模式和設計理念
-
-### v1.1.0 (2026-05-06)
-
-**新增功能**
-- ✨ quote-analysis — 報價解析與自動比價
-- ✨ quote-generator — 報價單產出
-- 🔐 SECURITY.md — 安全政策文檔
 
 ### v1.0.0 (2026-05-06)
 
